@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Photo Gallery
 
-## Getting Started
+This is a simple and responsive photo gallery application built with Next.js and Tailwind CSS. The gallery fetches curated photos from the Pexels API and displays them in a Masonry layout.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Responsive Design**: The gallery adapts to different screen sizes, displaying images in a grid layout.
+- **Infinite Scroll**: Automatically loads more photos as the user scrolls down.
+- **Skeleton Loading**: Displays a loading skeleton while images are being fetched.
+- **Masonry Layout**: Images are displayed in a staggered grid layout, providing a visually appealing presentation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Pexels API](https://www.pexels.com/api/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Create a `.env.local` file in the root directory and add your Pexels API key:
+   ```plaintext
+   PEXELS_API_KEY=your_api_key_here
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open your browser and navigate to `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The gallery will display a set of curated photos from Pexels.
+- As you scroll down, more photos will automatically load.
+- Each photo will show a skeleton loader while it is being fetched.
+
+## Components
+
+### PhotoGallery
+
+- Displays the main gallery of photos.
+- Fetches photos from the Pexels API.
+- Implements infinite scrolling.
+
+### BlurImage
+
+- Handles the display of individual images.
+- Shows a skeleton loader while the image is loading.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
