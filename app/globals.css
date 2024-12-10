@@ -19,3 +19,25 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.masonry-container {
+    column-count: 2; /* Adjust for smaller screens */
+    column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .masonry-container {
+        column-count: 3; /* Medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .masonry-container {
+        column-count: 4; /* Large screens */
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
