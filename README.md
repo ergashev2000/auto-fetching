@@ -20,7 +20,7 @@ This is a simple and responsive photo gallery application built with Next.js and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/ergashev2000/auto-fetching.git
    cd your-repo-name
    ```
 
